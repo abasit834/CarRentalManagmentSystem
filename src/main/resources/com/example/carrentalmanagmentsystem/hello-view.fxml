@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carrentalmanagmentsystem.HomeScreen">
+    <ImageView fitHeight="768.0" fitWidth="1024.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@kam-dark.png" />
+        </image>
+    </ImageView>
+   <Text fill="#ffc300" layoutX="342.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CAR TABLE">
+      <font>
+         <Font name="Copperplate Gothic Bold" size="47.0" />
+      </font>
+   </Text>
+   <TextField fx:id="carIdField" layoutX="405.0" layoutY="222.0" prefHeight="33.0" prefWidth="192.0" promptText="Registration ID" />
+   <TextField fx:id="carNameField" layoutX="405.0" layoutY="276.0" prefHeight="33.0" prefWidth="192.0" promptText="Car Name" />
+   <TextField fx:id="companyName" layoutX="405.0" layoutY="434.0" prefHeight="33.0" prefWidth="192.0" promptText="Company Name" />
+   <TextField fx:id="modelField" layoutX="405.0" layoutY="328.0" prefHeight="33.0" prefWidth="192.0" promptText="Model" />
+   <TextField fx:id="dailyRateField" layoutX="405.0" layoutY="489.0" prefHeight="33.0" prefWidth="192.0" promptText="Rate" />
+   <TextField fx:id="color" layoutX="405.0" layoutY="384.0" prefHeight="33.0" prefWidth="192.0" promptText="Color" />
+   <Button fx:id="saveButton" layoutX="457.0" layoutY="631.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="87.0" styleClass="btn" text="Save" textFill="#ffc300">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Button>
+   <TextField fx:id="ownerID" layoutX="405.0" layoutY="541.0" prefHeight="33.0" prefWidth="192.0" promptText="Owner ID" />
+
+
+</AnchorPane>

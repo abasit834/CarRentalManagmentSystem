@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carrentalmanagmentsystem.Rent">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1024.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@kam-dark.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="saveButton" layoutX="444.0" layoutY="619.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="102.0" styleClass="btn" text="Save">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Button>
+      <TextField fx:id="carRegNoTextField" layoutX="202.0" layoutY="285.0" prefHeight="40.0" prefWidth="235.0" promptText="Car RegNo." />
+      <TextField fx:id="customerIdTextField" layoutX="548.0" layoutY="285.0" prefHeight="40.0" prefWidth="235.0" promptText="Customer ID" />
+      <MenuButton fx:id="bookingType" layoutX="383.0" layoutY="364.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="235.0" text="Booking Type">
+         <items>
+            <MenuItem fx:id="pickDrop" text="Pick/Drop" />
+            <MenuItem fx:id="days" text="Day/Days" />
+         </items>
+      </MenuButton>
+      <TextField fx:id="noOfDays" layoutX="551.0" layoutY="444.0" prefHeight="40.0" prefWidth="235.0" promptText="No. of Days" />
+      <TextField fx:id="KmDriven" layoutX="205.0" layoutY="444.0" prefHeight="40.0" prefWidth="235.0" promptText="Km's Driven" />
+      <DatePicker fx:id="startDate" layoutX="202.0" layoutY="525.0" prefHeight="40.0" prefWidth="235.0" promptText="Start Date" />
+      <DatePicker fx:id="endDate" layoutX="551.0" layoutY="525.0" prefHeight="40.0" prefWidth="235.0" promptText="End Date" />
+      <Text fill="#ffc300" layoutX="341.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rent Details">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="47.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

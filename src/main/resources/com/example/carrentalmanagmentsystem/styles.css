@@ -1,0 +1,48 @@
+
+
+/* JavaFX code to handle hover effect */
+.btn:hover {
+    -fx-background-color: #9575CD; /* Light purple color */
+}
+
+.btn {
+    /* Your non-pseudo-element styles here */
+    -fx-background-color: transparent;
+    -fx-border-color: #FFC300; /* Light purple color */
+    -fx-border-width: 3px;
+    -fx-text-fill: white;
+}
+
+.btn:hover {
+    /* JavaFX code to handle pseudo-element effect */
+    -fx-background-color: #FFC300; /* Light purple color */
+    -fx-border-color: transparent;
+}
+/* styles.css */
+.text-field {
+    -fx-background-color: #f2f2f2; /* Light gray background */
+    -fx-border-color: #FFC300; /* Border color */
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-prompt-text-fill: #757575; /* Prompt text color */
+    -fx-font-size: 14px;
+}
+
+.text-field:focused {
+    -fx-border-color: #FFC300; /* Border color on focus */
+}
+
+
+.menu-button {
+       -fx-background-color: #f2f2f2; /* Light gray background */
+       -fx-border-color: #FFC300; /* Border color */
+       -fx-border-width: 2px;
+       -fx-border-radius: 5px;
+       -fx-prompt-text-fill: #757575; /* Prompt text color */
+       -fx-font-size: 14px;
+}
+
+.menu-button:hover {
+    -fx-background-color: #FFC300; /* Darker green on hover */
+}
+

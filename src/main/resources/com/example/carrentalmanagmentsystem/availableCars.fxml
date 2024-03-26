@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carrentalmanagmentsystem.OutputScreenController">
+    <children>
+        <TableView fx:id="outputTable">
+            <columns>
+                <TableColumn text="RegID" fx:id="regIdColumn" prefWidth="100">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="regId" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Car Name" fx:id="carNameColumn" prefWidth="100">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="carName" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Company Name" fx:id="companyNameColumn" prefWidth="100">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="companyName" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Model" fx:id="modelColumn" prefWidth="100">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="model" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Daily Rate" fx:id="dailyRateColumn" prefWidth="100">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="dailyRate" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Color" fx:id="colorColumn" prefWidth="100">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="color" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+
+    </children>
+</AnchorPane>

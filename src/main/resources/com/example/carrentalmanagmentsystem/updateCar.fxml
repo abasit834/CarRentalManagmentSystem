@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carrentalmanagmentsystem.updateCarTable">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1024.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@kam-dark.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="carRegNoTextField" layoutX="222.0" layoutY="285.0" prefHeight="39.0" prefWidth="198.0" promptText="Car Reg No" />
+      <MenuButton fx:id="selectColumnMenuButton" layoutX="530.0" layoutY="285.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="187.0" text="Select Column">
+        <items>
+            <MenuItem fx:id="dailyRate" text="Daily Rate" />
+        </items>
+      </MenuButton>
+      <TextField fx:id="updatedValueTextField" layoutX="400.0" layoutY="416.0" prefHeight="39.0" prefWidth="198.0" promptText="Enter Updated Value" />
+      <Button fx:id="update" layoutX="432.0" layoutY="556.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="126.0" styleClass="btn" text="Update">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Text fill="#ffc300" layoutX="266.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Daily Rate" wrappingWidth="466.3504180908203">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="45.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
